@@ -18,7 +18,15 @@ h3 {
 
 /* Header */
 header {
+  display: flex;
+  flex-direction: row;
+  /*flex-basis: auto;*/
+  justify-content: space-between;
   text-align: center;
+}
+
+nav {
+  
 }
 
 /* Containers */
