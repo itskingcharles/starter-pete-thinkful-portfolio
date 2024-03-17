@@ -12,22 +12,28 @@ body {
 h1,
 h2,
 h3 {
+
   font-family: "Playfair Display", Times, serif;
   text-align: center;
+  
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header */
 header {
   display: flex;
   flex-direction: row;
-  /*flex-basis: auto;*/
   justify-content: space-between;
   text-align: center;
+  align-items: center;
 }
 
-nav {
-  
-}
 
 /* Containers */
 div {
@@ -45,9 +51,34 @@ article div {
   width: 100%;
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 2;
+}
+
+#about-heading {
+  /*display: flex;*/
+  align-items: center;
+  text-align: center;
+}
+
+#hi-heading {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+}
+
 /* Paragraphs */
 p {
   line-height: 1.5;
+  width: 100%;
 }
 
 /* Links */
