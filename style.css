@@ -12,28 +12,18 @@ body {
 h1,
 h2,
 h3 {
-
   font-family: "Playfair Display", Times, serif;
-  text-align: center;
-  
-}
-
-/* Main Container */
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;  
 }
 
 /* Header */
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   align-items: center;
 }
-
 
 /* Containers */
 div {
@@ -47,7 +37,7 @@ article {
 }
 
 article div {
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -59,20 +49,19 @@ section {
 #about {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   flex: 2;
 }
 
 #about-heading {
-  /*display: flex;*/
   align-items: center;
   text-align: center;
 }
 
 #hi-heading {
-  display: flex;
-  align-items: start;
-  justify-content: end;
+  /*display: flex;
+  align-items: center;
+  justify-content: end;*/
 }
 
 /* Paragraphs */
@@ -99,6 +88,9 @@ img {
   width: 100%;
   max-width: 200px;
   height: auto;
+  display: flex; /*attempt to align image*/
+  justify-content: space-around; /*may not need */
+  align-items: center; /*may not need */
 }
 
 .image-circle {
@@ -106,9 +98,35 @@ img {
   border-radius: 50%;
 }
 
+#portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.column-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 5px;
+}
+
+.div-portfolio {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between; /* Distribute space evenly - may not need here*/
+  padding: 20px 0px; /*was 20px*/
+  align-items: flex-start;
+}
+
 /* Footer */
 footer {
+  display: flex;
   text-align: center;
+  align-items: center;
 }
 
 /* Other page elements */
