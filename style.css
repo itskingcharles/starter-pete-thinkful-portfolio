@@ -64,6 +64,12 @@ p {
   width: 100%;
 }
 
+.project-description {
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+}
+
 /* Links */
 a:link {
   color: #d62828;
@@ -105,6 +111,7 @@ img {
   flex-wrap: wrap;
   flex: 1;
   padding: 5px;
+  
 }
 
 .div-portfolio {
